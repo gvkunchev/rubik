@@ -61,5 +61,6 @@ class Controller:
 
 
 if __name__ == '__main__':
-    controller = Controller(size=3, interface=config.GUI)
+    #controller = Controller(size=3, interface=config.GUI)
+    controller = Controller(size=3, interface=config.CLI)
     controller.start()
