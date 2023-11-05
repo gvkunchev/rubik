@@ -19,11 +19,7 @@ class Piece:
 
     def __init__(self, colors):
         """Initializator."""
-        self._x, self._y, self._z = colors
-    
-    def __getattr__(self, attr):
-        """Allow reading with x, y, z as arguments."""
-        return getattr(self, f"_{attr}")
+        self.x, self.y, self.z = colors
     
     def __repr__(self):
         """Representation of the piece."""
@@ -32,11 +28,11 @@ class Piece:
     def rotate(self, axis):
         """Rotate a piece around axis."""
         if axis == config.x:
-            self._x, self._y, self._z = self._x, self._z, self._y
+            self.x, self.y, self.z = self.x, self.z, self.y
         elif axis == config.y:
-            self._x, self._y, self._z = self._z, self._y, self._x
+            self.x, self.y, self.z = self.z, self.y, self.x
         elif axis == config.z:
-            self._x, self._y, self._z = self._y, self._x, self._z
+            self.x, self._y, self.z = self.y, self.x, self.z
 
 
 class Rubik:

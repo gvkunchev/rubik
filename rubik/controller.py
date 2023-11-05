@@ -4,6 +4,7 @@ import config
 from model import Rubik
 from view import Cli, Gui
 
+
 class Controller:
     """Controller for a Rubik cube."""
 
