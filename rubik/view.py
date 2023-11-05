@@ -191,7 +191,6 @@ class Gui(Interface):
         """Handle mouse down event."""
         self._last_tile = self._get_tile_at_position(event.x, event.y)
 
-
     def _on_mouse_up_global(self, _):
         """Handle mouse up event."""
         x, y = self._window.winfo_pointerxy()

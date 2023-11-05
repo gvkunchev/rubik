@@ -32,7 +32,7 @@ class Piece:
         elif axis == config.y:
             self.x, self.y, self.z = self.z, self.y, self.x
         elif axis == config.z:
-            self.x, self._y, self.z = self.y, self.x, self.z
+            self.x, self.y, self.z = self.y, self.x, self.z
 
 
 class Rubik:
